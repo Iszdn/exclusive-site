@@ -1,0 +1,100 @@
+#featured{
+    padding-top: 70px;
+    .head{
+        display: flex;
+        align-items: center;
+      .rectangle{
+width: 20px;
+height: 40px;
+background-color: var(--main--color);
+border-radius: 4px;
+      } 
+      .ht{
+      color: var(--main--color);
+        font-size: 16px;
+        padding-left: 10px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 20px;
+      } 
+    }
+    h2{
+        padding-top: 20px;
+font-size: 36px;
+font-style: normal;
+font-weight: 600;
+line-height: 48px; /* 133.333% */
+letter-spacing: 1.44px;
+    }
+    .parent {
+        .content{
+            position: absolute;
+            bottom: 0;
+            max-width: 242px;
+            padding-bottom: 20px;
+            h3{
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 24px; 
+                letter-spacing: 0.72px;
+            }
+            p{
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 21px;
+            }
+            a{
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 24px;
+                text-decoration: underline !important;
+            }
+           }
+        .plastation { 
+       background-color: black;
+       padding: 60px 20px;
+       position: relative;
+       color: #FAFAFA !important;
+        }
+       .difference{
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+        .woman{
+
+            background-color: black;
+       padding: 20px;
+       position: relative;
+       color: #FAFAFA !important;
+       height: 286px;
+           img{
+       height: 100%;
+       transform: scaleX(-1);
+           } 
+        }
+        .dis{
+            display: flex;
+            margin-top: 10px;
+           .speakers{
+            margin-right: 10px;
+            background-color: black;
+            padding: 20px;
+            position: relative;
+            color: #FAFAFA !important;
+        }
+        .perfume{
+            background-color: black;
+            padding: 20px;
+            position: relative;
+            color: #FAFAFA !important;
+        } 
+        }
+        
+       }
+        }
+        
+        
+}

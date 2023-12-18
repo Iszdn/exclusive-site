@@ -1,0 +1,47 @@
+#contact{
+    padding: 80px 0;
+.where{
+    padding-bottom: 80px;
+    font-size: 14px;
+    .navi{
+        opacity: 0.5;
+    }
+}
+.contact-us{
+    padding: 40px 35px 51px 35px;
+    box-shadow: 0px 1px 13px 0px rgba(0, 0, 0, 0.05);
+    .call-us{
+        display: flex;
+        flex-direction: column;
+.icon{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    .ico{
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 24px;
+        color: white;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: var(--main--color);
+    }
+    p{
+        font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 24px;
+    }
+}
+    }
+    p{
+        font-size: 14px;
+    }
+    .line{
+        margin: 32px 0;
+    }
+}
+}

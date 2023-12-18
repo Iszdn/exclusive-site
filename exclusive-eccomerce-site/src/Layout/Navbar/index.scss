@@ -1,0 +1,135 @@
+#navbar {
+    padding: 70px 0 30px 0;
+    border-bottom: 1px solid rgba(10, 10, 10,0.3);
+    
+    .nav {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        .logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            h2 {
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 24px;
+                letter-spacing: 0.72px;
+            }
+        }
+        .navigations {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+            li {
+                a {
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 24px;
+                }
+                .active {
+                    border-bottom: 1px solid black;
+                }
+            }
+        }
+
+        .right-side {
+            display: flex;
+            justify-content: space-around;
+            gap: 20px;
+            align-items: center;
+
+            span {
+                font-size: 24px;
+            }
+            .bar {
+                display: none;
+            }
+            .searching {
+                position: relative;
+                padding: 7px 12px 7px 20px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: #F5F5F5;
+                input {
+                    border: none;
+                    background-color: transparent;
+                    outline: none;
+
+                    &::placeholder {
+                        font-size: 12px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 18px;
+                    }
+                }
+                .search-icon {
+                    position: absolute;
+                    right: 9px;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:992px) {
+    #navbar {
+        .nav {
+            .logo {
+                h2 {
+                    font-size: 24px;  
+                }
+            }
+            .navigations {
+            display: none;
+            }
+    
+            .right-side {
+                gap: 10px;
+    
+                span {
+                    font-size: 24px;
+                }
+                .bar {
+                    display: block;
+                }
+                
+            }
+        }
+    }   
+}
+@media screen and (max-width:500px) {
+    #navbar {
+        .nav {
+            .logo {
+                h2 {
+                    font-size: 20px;  
+                }
+            }
+            .navigations {
+            display: none;
+            }
+    
+            .right-side {
+                gap: 10px;
+    
+                span {
+                    font-size: 20px;
+                }
+                .bar {
+                    display: block;
+                }
+                .searching {
+                    input {
+    display: none;
+                       
+                    }
+                    
+                }
+            }
+        }
+    }   
+}

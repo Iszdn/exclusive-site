@@ -1,0 +1,61 @@
+#sign-up {
+  display: flex;
+  gap: 20px;
+  padding: 80px 0;
+
+  .image-sign {
+    max-width: 60%;
+    height: 100%;
+  }
+  .sign-form {
+    max-width: 40%;
+    padding: 0 50px;
+    display: flex;
+    flex-direction: column;
+
+    form {
+      display: flex;
+      flex-direction: column;
+      .inp {
+        border-bottom: 1px solid rgb(93, 92, 92);
+        margin-top: 40px;
+        input {
+          border: none;
+          outline: none;
+        }
+      }
+      .log {
+        
+        .btn {
+          display: flex;
+          justify-content: center;
+          padding: 10px 0;
+          align-items: center;
+          gap: 10px;
+          margin-bottom: 20px;
+          outline: none;
+          border: none;
+          margin-top: 40px;
+          color: white;
+          background-color: var(--main--color);
+        }
+        .forget {
+          color: var(--main--color) !important;
+          margin-top: 10px;
+          text-decoration: underline !important;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 992px) {
+  #sign-up {
+    flex-direction: column;
+    .image-sign {
+      max-width: 100%;
+    }
+    .sign-form {
+      max-width: 100%;
+    }
+  }
+}
