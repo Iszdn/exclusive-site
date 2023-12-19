@@ -60,7 +60,7 @@ const TodaysCards = () => {
         <Slider {...sliderSettings}>
           {products.map((product, index) => (
             <div key={index}>
-              <Card image={product.image} title={product.title} price={product.price} discount={product.discount} rating={product.raiting}/>
+              <Card id={product.id} image={product.image} title={product.title} price={product.price} discount={product.discount} rating={product.raiting}/>
             </div>
            
           ))}

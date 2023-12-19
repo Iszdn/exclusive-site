@@ -1,6 +1,6 @@
 .card0{
     position: relative;
-    margin-right: 10px;
+    // margin-right: 10px;
     .act{
         position: absolute;
         right: 20px;
@@ -42,7 +42,7 @@ transition: 0.7s;
 .card-comp{
     background-color: #F5F5F5;
     padding: 65px 40px;
-    height: 282px;
+    // height: 282px;
    .image{
     display: flex;
     justify-content: center;
@@ -74,7 +74,6 @@ flex-shrink: 0;
         font-style: normal;
         font-weight: 500;
         line-height: 24px; /* 150% */
-        text-decoration-line: strikethrough;
         opacity: 0.5;
     }
     .raiting{

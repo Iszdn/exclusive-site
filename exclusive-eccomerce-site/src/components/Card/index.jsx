@@ -21,6 +21,7 @@ const generateStars = (rating) => {
   };
 const Card = ({id,image,title,price,discount,rating }) => {
   const discountedPrice = price - (price * discount) / 100;
+  console.log(id);
   return (
    
     <div>
@@ -29,7 +30,7 @@ const Card = ({id,image,title,price,discount,rating }) => {
         <div ><FaRegHeart /></div>
         <div ><Link to={`/details/`+id}> <FaRegEye /> </Link></div>
         </div>
-        <div className='add'><a href="">Add To Cart</a>
+        <div className='add'><Link>Add To Cart</Link>
         </div>
         <div className='card-comp'>
 <div className='image'>

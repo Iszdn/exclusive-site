@@ -14,7 +14,7 @@ const Details = () => {
     {
 data && 
    
-   <DetailsCard image={data.image} title={data.title} price={data.price} des={data.des} rating={data.rating}/>
+   <DetailsCard image={data.image} title={data.title} price={data.price} des={data.des} rating={data.raiting}/>
          }</> 
   )
 }

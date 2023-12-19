@@ -5,9 +5,11 @@ import { FaFacebookF } from "react-icons/fa";
 import { RxTwitterLogo } from "react-icons/rx";
 import { FaInstagram } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
+import { LuCopyright } from "react-icons/lu";
 const Footer = () => {
   return (
-    <div id='footer'>
+    <footer id='footer'>
+      <div className="top">
 <div className="container">
   <div className="row">
     <div className="ex col-lg-3">
@@ -69,7 +71,13 @@ const Footer = () => {
     </div>
   </div>
 </div>
-    </div>
+<div className=" custom">
+ <LuCopyright  className='icon' />
+ <p>Copyright Rimel 2022. All right reserved</p>
+</div>
+</div>
+
+    </footer>
   )
 }
 

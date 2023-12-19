@@ -27,7 +27,7 @@ const DetailsCard = ({image,title,price,des,rating}) => {
     <h2>{title}</h2>
     <div className="raiting"> 
     {generateStars(rating)}
-    
+  
     </div>
     <span className="price">${price}</span>
 <p className='des'>{des}</p>
