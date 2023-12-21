@@ -23,7 +23,7 @@ const Navbar = () => {
     <div className="searching">
     <input type="text" placeholder='What are you looking for' />
     <span className='search-icon'><LuSearch /></span></div>
-    <span><CgHeart /></span>
+    <span><Link to="/wishlist"><CgHeart /></Link></span>
     <span><MdOutlineShoppingCart /></span>
     <span className='bar'><FaBarsStaggered /></span>
   </div>

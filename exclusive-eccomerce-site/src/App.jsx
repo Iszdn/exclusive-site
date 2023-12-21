@@ -11,6 +11,7 @@ import SignUpPage from './Pages/SignUpPage'
 import Details from './Pages/DetailsPage';
 import NotFound from './Pages/NotFoundPage';
 import LogIn from './Pages/LoginPage';
+import Wishlist from './components/Feature/WishlistRedux/Wishlist';
 
 function App() {
 
@@ -23,6 +24,8 @@ function App() {
       <Route path='/signup' element={<SignUpPage/>}/>
       <Route path='/login' element={<LogIn/>}/>
       <Route path='/details/:id' element={<Details/>}/>
+      <Route path='/wishlist' element={<Wishlist/>}/>
+
       <Route path='*' element={<NotFound/>}/>
       </Route>
       

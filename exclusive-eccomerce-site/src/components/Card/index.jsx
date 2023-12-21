@@ -5,6 +5,8 @@ import { FaRegEye } from "react-icons/fa6";
 
 import "./index.scss"
 import { Link } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
+import { addWishlist } from '../Feature/WishlistRedux/WishlistSlice';
 
 const generateStars = (rating) => {
     const stars = [];
@@ -20,14 +22,14 @@ const generateStars = (rating) => {
     return stars;
   };
 const Card = ({id,image,title,price,discount,rating }) => {
+  const dispatch=useDispatch()
   const discountedPrice = price - (price * discount) / 100;
-  console.log(id);
   return (
    
     <div>
         <div className='card0'>
         <div className='act'>
-        <div ><FaRegHeart /></div>
+        <div onClick={()=>dispatch(addWishlist(id,image,title,price,discount))} ><FaRegHeart /></div>
         <div ><Link to={`/details/`+id}> <FaRegEye /> </Link></div>
         </div>
         <div className='add'><Link>Add To Cart</Link>
