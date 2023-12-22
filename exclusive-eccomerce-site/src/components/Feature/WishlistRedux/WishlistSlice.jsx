@@ -3,6 +3,7 @@ import { createSlice } from "@reduxjs/toolkit";
 const initialState={
     value:[]
 }
+
 export const wishlistSlice=createSlice({
     name:"wishlist",
     initialState,
@@ -17,6 +18,7 @@ export const wishlistSlice=createSlice({
         deleteWish:(state,action)=>{
             const {id}=action.payload
             state.value=state.value.filter(x=>x.id!==id)
+            console.log(state.value);
         }
 
     }

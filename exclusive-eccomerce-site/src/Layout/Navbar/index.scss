@@ -72,7 +72,28 @@
                     right: 9px;
                 }
             }
+        .wish{
+position: relative;
+font-size: 24px;
+ .count{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+position: absolute;
+right: -7px;
+top: 3px;
+width: 14px;
+height: 14px;
+font-size: 13px;
+padding: 8px;
+color: white;
+border-radius: 50%;
+background-color: var(--main--color);
         }
+        }
+       
+        }
+    
     }
 }
 @media screen and (max-width:992px) {

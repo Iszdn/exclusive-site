@@ -60,7 +60,7 @@ const BestSellings = () => {
         <Slider {...sliderSettings}>
           {products.map((product, index) => (
             <div key={index}>
-              <Card image={product.image} title={product.title} price={product.price} discount={product.discount} rating={product.raiting}/>
+              <Card product={product} {...product} />
             </div>
           ))}
         </Slider>
