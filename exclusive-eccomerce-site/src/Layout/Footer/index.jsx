@@ -6,7 +6,9 @@ import { RxTwitterLogo } from "react-icons/rx";
 import { FaInstagram } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
 import { LuCopyright } from "react-icons/lu";
+import { useNavigate } from 'react-router-dom';
 const Footer = () => {
+  const navigate=useNavigate()
   return (
     <footer id='footer'>
       <div className="top">
@@ -34,11 +36,11 @@ const Footer = () => {
     <div className="col-lg-2">
       <h3>Account</h3>
       <ul>
-        <li>My Account</li>
-        <li>Login / Register</li>
-        <li>Cart</li>
-        <li>Wishlist</li>
-        <li>Shop</li>
+        <li onClick={()=>navigate("/home/acount")}>My Account</li>
+        <li onClick={()=>navigate("/signup")}>Login / Register </li>
+        <li onClick={()=>navigate("/home/basket")}>Cart</li>
+        <li onClick={()=>navigate("/home/wishlist")}>Wishlist</li>
+        <li onClick={()=>navigate("/home/My Account/Product/View Cart")}>Shop</li>
       </ul>
     </div>
     <div className="col-lg-2">
@@ -47,7 +49,7 @@ const Footer = () => {
         <li>Privacy Policy</li>
         <li>Terms Of Use</li>
         <li>FAQ</li>
-        <li>Contact</li>
+        <li onClick={()=>navigate("/contact")}>Contact</li>
       </ul>
     </div>
     <div className="qrcod col-lg-3">

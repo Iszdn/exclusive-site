@@ -1,0 +1,23 @@
+.timer{
+
+    .datas{
+       display: flex;
+       gap: 15px;
+       margin-bottom: -20px;
+       p{
+           font-size: 20px;
+       }
+    }
+    .time{
+       display: flex;
+       gap: 15px;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       p{
+           font-size: 50px;
+           color: var(--main--color);
+       }
+    }
+       
+   }

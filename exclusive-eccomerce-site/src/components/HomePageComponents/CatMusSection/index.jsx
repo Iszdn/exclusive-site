@@ -1,5 +1,6 @@
 import React from 'react'
 import "./index.scss"
+import Time from './Time'
 const CatMusSection = () => {
   return (
     <div className='container'>
@@ -10,10 +11,7 @@ const CatMusSection = () => {
             <p className='cat'>Categories</p>
             <h2>Enhance Your  Music Experience</h2>
             <div className="timer">
-                <div className='time'><span>23</span><p>Hours</p></div>
-                <div className='time'><span>05</span><p>Days</p></div>
-                <div className='time'><span>59</span><p>Minutes</p></div>
-                <div className='time'><span>35</span><p>Seconds</p></div>
+               <Time/>
             </div>
             <div className="btnn">
                 <a href="">Buy Now!</a>

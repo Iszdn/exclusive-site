@@ -1,0 +1,52 @@
+#checkout-page{
+    padding: 70px 0;
+  .where{
+    padding-bottom: 80px;
+    font-size: 14px;
+    .navi{
+        opacity: 0.5;
+    }
+}  
+.deta{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .billing-details{
+    form{
+        display: flex;
+    flex-direction: column;
+    label{
+        margin-bottom: 10px;
+        opacity: 0.4;
+    }
+    input{
+        background-color: #F5F5F5;
+        border: none;
+        outline: none;
+        height: 50px;
+        margin-bottom: 32px;
+    }
+    .check{
+      display: flex;
+      justify-content: space-between;
+       input{
+        width: 24px;
+height: 24px;
+margin-right: 10px;
+       }
+    }
+    }
+
+}
+}
+
+}
+@media screen and (max-width:992px) {
+    #checkout-page{
+        .deta{
+            flex-direction: column;
+            gap: 30px;
+            
+        }
+    }
+}

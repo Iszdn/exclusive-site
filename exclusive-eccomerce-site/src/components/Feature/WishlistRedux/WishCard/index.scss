@@ -1,4 +1,4 @@
-.card0{
+.card01{
     position: relative;
     // margin-right: 10px;
     .act{
@@ -16,7 +16,7 @@ justify-content: center;
 align-items: center;
 margin-bottom: 5px;
 &:hover{
-    color: red;
+    color: gray;
 }
         }
     }
@@ -74,15 +74,15 @@ flex-shrink: 0;
         font-style: normal;
         font-weight: 500;
         line-height: 24px; /* 150% */
-        opacity: 0.5;
+        
     }
     .raiting{
         display: flex;
     }
 }
 }
-.card0:hover .add{
+.card01:hover .add{
     display: block;
-    transform: translateY(-72px);
+    transform: translateY(-58px);
     transition: 0.7s;
 }

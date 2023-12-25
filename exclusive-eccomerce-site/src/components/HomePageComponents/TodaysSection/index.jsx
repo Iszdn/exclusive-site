@@ -2,6 +2,7 @@ import React from 'react'
 import "./index.scss"
 import Card from '../../Card'
 import TodaysCards from '../TodaysCards'
+import Timer from '../Timer'
 const TodaysSection = () => {
   return (
     <div id='todays'>
@@ -13,14 +14,7 @@ const TodaysSection = () => {
 <div className="flash-sales">
     <h2>Flash Sales</h2>
     <div className='timer'>
-<p>Days <br />
-<span>03</span> <span className='tocki'>:</span></p>
-<p>Hours <br />
-<span>23</span><span className='tocki'>:</span></p>
-<p>Minutes <br />
-<span>19</span><span className='tocki'>:</span></p>
-<p>Seconds <br />
-<span>56</span></p>
+<Timer/>
     </div>
 
 </div>

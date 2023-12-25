@@ -3,6 +3,7 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import OurCard from '../../OurCard';
+import Card from '../../Card';
 
 const OurProducts = () => {
     const [products, setProducts] = useState([])
@@ -60,7 +61,7 @@ const OurProducts = () => {
         <Slider {...sliderSettings}>
           {products.map((product, index) => (
             <div key={index}>
-              <OurCard image={product.image} title={product.title} price={product.price} discount={product.discount} rating={product.raiting}/>
+              <OurCard product={product} {...product}/>
             </div>
           ))}
         </Slider>

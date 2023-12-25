@@ -84,3 +84,21 @@ transform: scaleX(-1);
     }
    
 }
+@media screen and (max-width:992px) {
+    #music{
+        background-color: black;
+        padding: 30px 60px;
+        margin-top: 70px;
+        .displayy{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        
+        .image-content{
+           display: none; 
+        }
+         
+        }
+       
+    }
+}

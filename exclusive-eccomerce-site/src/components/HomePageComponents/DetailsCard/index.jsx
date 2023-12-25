@@ -4,6 +4,10 @@ import { FaStar } from "react-icons/fa6";
 import { TbTruckDelivery } from "react-icons/tb";
 import { TbTruckReturn } from "react-icons/tb";
 import "./index.scss"
+import { useDispatch } from 'react-redux';
+import { addWishlist } from '../../Feature/WishlistRedux/WishlistSlice';
+import { addBasket, decrementBasket, increamentBasket } from '../../Feature/Basket/BasketSlice';
+import { Link } from 'react-router-dom';
 const generateStars = (rating) => {
     const stars = [];
     for (let i = 1; i <= 5; i++) {
@@ -18,6 +22,7 @@ const generateStars = (rating) => {
     return stars;
   };
 const DetailsCard = ({image,title,price,des,rating}) => {
+const   dispatch=useDispatch()
   return (
     <div className='detail'>
 <div className='image-det'>
@@ -34,14 +39,14 @@ const DetailsCard = ({image,title,price,des,rating}) => {
 <hr className='line'/>
 <div className='quan'>
 <div className='incdec'>
-  <button>-</button>
+  <button  onClick={()=>dispatch(decrementBasket({image,title,price,des,rating}))}>-</button>
   <div className='count'>1</div>
-  <button>+</button>
+  <button onClick={()=>dispatch(increamentBasket({image,title,price,des,rating}))}>+</button>
 </div>
-<div className="btn">
-    <a href="">Buy Now</a>
+<div className="btn" onClick={()=>dispatch(addBasket({image,title,price,des,rating}))}>
+    <Link href="">Buy Now</Link>
 </div>
-<div className='icon'><FaRegHeart /></div>
+<div className='icon' onClick={()=>dispatch(addWishlist({image,title,price,des,rating}))} ><FaRegHeart /></div>
 </div>
 <div className='delivery'>
     <div className="free">

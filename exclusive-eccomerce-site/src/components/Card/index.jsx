@@ -7,6 +7,7 @@ import "./index.scss"
 import { Link } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { addWishlist } from '../Feature/WishlistRedux/WishlistSlice';
+import { addBasket } from '../Feature/Basket/BasketSlice';
 
 const generateStars = (rating) => {
   console.log(rating);
@@ -32,10 +33,10 @@ const Card = ( product ) => {
     <div>
       <div className='card0'>
         <div className='act'>
-          <div onClick={() => dispatch(addWishlist(product))} ><FaRegHeart /></div>
-          <div ><Link to={`/details/` + product.id}> <FaRegEye /> </Link></div>
+          <div className='heart' onClick={() => dispatch(addWishlist(product))} ><FaRegHeart /></div>
+          <div className='eye' ><Link to={`/details/` + product.id}> <FaRegEye /> </Link></div>
         </div>
-        <div className='add'><Link>Add To Cart</Link>
+        <div onClick={() => dispatch(addBasket(product))} className='add'><Link>Add To Cart</Link>
         </div>
         <div className='card-comp'>
           <div className='image'>

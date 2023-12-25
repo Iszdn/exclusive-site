@@ -7,6 +7,7 @@ import CatMusSection from '../../components/HomePageComponents/CatMusSection'
 import OurProductSection from '../../components/HomePageComponents/OurProductSection'
 import FeaturedSection from '../../components/HomePageComponents/FeatureSection'
 import ServicesSection from '../../components/HomePageComponents/ServicesSection'
+import BackToTopButton from '../../components/BackToTop'
 
 const HomePage = () => {
   return (
@@ -20,6 +21,7 @@ const HomePage = () => {
 <OurProductSection/>
 <FeaturedSection/>
 <ServicesSection/>
+
     </>
   )
 }

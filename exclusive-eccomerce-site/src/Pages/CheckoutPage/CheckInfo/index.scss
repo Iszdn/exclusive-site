@@ -1,0 +1,139 @@
+.pay {
+  .products {
+    padding-right: 120px;
+    .product {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 425px;
+      p {
+        margin-bottom: 0 !important;
+      }
+
+      .img-pr {
+        display: flex;
+        align-self: center;
+        gap: 6px;
+        .img {
+          display: flex;
+          width: 34px;
+          height: 34px;
+          padding: 8px 2px 7px 2px;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+    }
+    .totl {
+      border-radius: 4px;
+
+      .titl {
+        padding-top: 20px;
+        display: flex;
+        justify-content: space-between;
+      }
+      .checkout {
+        display: inline-flex;
+        padding: 16px 48px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        background-color: var(--main--color);
+        color: white;
+        border-radius: 4px;
+        margin-top: 30px;
+      }
+    }
+    .cards-pay {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      .gap-20{
+            gap: 20px;
+        }
+      .card-pay {
+        margin-top: 32px;
+        display: flex;
+        justify-content: space-between;
+        
+        .bank-cards {
+          display: flex;
+          .image {
+            display: flex;
+            width: 42px;
+            height: 28px;
+            padding: 5.6px 2.1px;
+            justify-content: center;
+            align-items: center;
+          }
+        }
+      }
+      input {
+        width: 24px;
+        height: 24px;
+      }
+    }
+    
+  }
+  .coupon{
+    margin-top: 32px;
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        .cod{
+            height: 56px;
+            display: flex;
+padding: 16px 164px 16px 24px;
+align-items: center;
+border-radius: 4px;
+border: 1px solid #000;
+span{
+opacity: 0.5;
+}
+        }
+            .btn-coup{
+                height: 56px;
+                display: flex;
+                border-radius: 4px;
+    padding: 16px 48px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: var(--main--color);
+    a{
+    color: white !important;
+    }
+            }
+      }
+      .btn-place{
+        width: 50%;
+        margin-top: 32px;
+        display: flex;
+padding: 16px 48px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+border-radius: 4px;
+color: white;
+background-color: var(--main--color);
+      }
+}
+@media screen and (max-width:660px){
+    .pay{
+        .products {
+            padding-right:0px;
+.product{
+    width: auto;
+}}
+.coupon{
+    flex-direction: column;
+    .cod{
+       max-width: 320px;
+    }
+    .btn-coup{
+        max-width: 320px;
+
+    }
+}
+    }  
+}

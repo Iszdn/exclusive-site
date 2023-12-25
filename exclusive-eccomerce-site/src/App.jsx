@@ -12,6 +12,10 @@ import Details from './Pages/DetailsPage';
 import NotFound from './Pages/NotFoundPage';
 import LogIn from './Pages/LoginPage';
 import Wishlist from './components/Feature/WishlistRedux/Wishlist';
+import Basket from './components/Feature/Basket/Basket';
+import CheckoutPage from './Pages/CheckoutPage';
+import AccountPage from './Pages/Account';
+
 
 function App() {
 
@@ -24,7 +28,10 @@ function App() {
       <Route path='/signup' element={<SignUpPage/>}/>
       <Route path='/login' element={<LogIn/>}/>
       <Route path='/details/:id' element={<Details/>}/>
-      <Route path='/wishlist' element={<Wishlist/>}/>
+      <Route path='/home/wishlist' element={<Wishlist/>}/>
+      <Route path='/home/basket' element={<Basket/>}/>
+      <Route path='/home/My Account/Product/View Cart' element={<CheckoutPage/>}/>
+      <Route path='/home/acount' element={<AccountPage/>}/>
 
       <Route path='*' element={<NotFound/>}/>
       </Route>

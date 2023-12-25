@@ -4,6 +4,7 @@ import "./index.scss"
 import { Link } from 'react-router-dom';
 import { deleteWish } from '../WishlistSlice';
 import { useDispatch, useSelector } from 'react-redux';
+import { addBasket } from '../../Basket/BasketSlice';
 
 
 
@@ -21,12 +22,12 @@ const WishCard = () => {
         wishlistArr && wishlistArr.map(x => (
           
           <div className='col-lg-4 col-md-4 col-6'>
-            <div className='card0'>
+            <div className='card01'>
               <div className='act'>
                 <div onClick={() => dispatch(deleteWish(x))} ><MdDelete /></div>
 
               </div>
-              <div className='add'><Link>Add To Cart</Link>
+              <div className='add' onClick={() => dispatch(addBasket(x))}><Link>Add To Cart</Link>
               </div>
               <div className='card-comp'>
                 <div className='image'>
@@ -37,7 +38,7 @@ const WishCard = () => {
               <div className="content">
                 <h2>{x.title}</h2>
                 {/* <span className='price'>${discountedPrice.toFixed(2)} </span> */}
-                <span className='discount'> <del>${x.price}</del></span>
+                <span className='discount'> ${x.price}</span>
 
               </div>
             </div>

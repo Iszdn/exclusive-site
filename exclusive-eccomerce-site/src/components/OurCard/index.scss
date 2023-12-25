@@ -1,4 +1,4 @@
-.card0{
+.cardour{
     position: relative;
     margin-right: 10px;
     .act{
@@ -15,9 +15,12 @@ display: flex;
 justify-content: center;
 align-items: center;
 margin-bottom: 5px;
-&:hover{
-    color: red;
-}
+        }
+        .heart:hover {
+            color: red;
+        }
+        .eye:hover {
+            color: blue;
         }
     }
     .add{
@@ -80,8 +83,8 @@ flex-shrink: 0;
    
 }
 }
-.card0:hover .add{
+.cardour:hover .add{
     display: block;
-    transform: translateY(-72px);
+    transform: translateY(-55px);
     transition: 0.7s;
 }

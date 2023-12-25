@@ -8,6 +8,7 @@ import "./index.scss"
 import { useSelector } from 'react-redux';
 const Navbar = () => {
   const wishlistArr = useSelector(state => state.wishlist.value)
+  const basketArr = useSelector(state => state.basket.value)
   return (
     <div id='navbar'>
 <div className="container">
@@ -25,8 +26,8 @@ const Navbar = () => {
     <div className="searching">
     <input type="text" placeholder='What are you looking for' />
     <span className='search-icon'><LuSearch /></span></div>
-    <div className='wish'><Link to="/wishlist"><CgHeart /></Link><div className='count'>{wishlistArr.length}</div></div>
-    <div className='wish'><Link to="/wishlist"><MdOutlineShoppingCart /></Link><div className='count'>{wishlistArr.length}</div></div>
+    <div className='wish'><Link to="/home/wishlist"><CgHeart /></Link><div className='count'>{wishlistArr.length}</div></div>
+    <div className='wish'><Link to="/home/basket"><MdOutlineShoppingCart /></Link><div className='count'>{basketArr.length}</div></div>
   
     <span className='bar'><FaBarsStaggered /></span>
   </div>

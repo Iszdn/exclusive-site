@@ -29,28 +29,8 @@ line-height: 48px;
 letter-spacing: 1.44px;
         }
       .timer{
-        display: flex;
-        gap: 10px;
-        padding-left: 40px;
-        p{
-            font-size: 12px;
-font-style: normal;
-font-weight: 500;
-line-height: 18px;
-span{
-    font-size: 32px;
-font-style: normal;
-font-weight: 700;
-line-height: 30px;
-font-family: Inter;
-letter-spacing: 1.28px;
-}
-.tocki{
-    color: var(--main--color);
-    padding-left: 10px;
-}
-        }
-    }  
+        margin-left: 10px;
+      }
     }
     .tod{
       margin-bottom: 70px;

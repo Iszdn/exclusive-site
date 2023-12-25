@@ -5,6 +5,7 @@ import { BiDollarCircle } from "react-icons/bi";
 import { MdOutlineShoppingBag } from "react-icons/md";
 import { TbMoneybag } from "react-icons/tb";
 import ServicesSection from '../../components/HomePageComponents/ServicesSection';
+import Professionals from '../../components/AboutPageComponents/Professionals';
 const AboutPage = () => {
   return (
     <div id='about'>
@@ -46,11 +47,11 @@ const AboutPage = () => {
     <p>Anual gross sale in our site</p>
 </div></div>
       </section>
-      {/* <section id='proffessors'>
-<div className="row">
-  <div className="col-lg-4 col-md-"></div>
+      <section id='proffessors'>
+<div>
+ <Professionals/>
 </div>
-      </section> */}
+      </section>
       <ServicesSection/>
       </div>  
     </div>
